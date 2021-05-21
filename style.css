@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('font.css');
+
+html, body{
+    width: 100%;
+    height: 100%;   
+    font-family: 'Itim';
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    color: #ffffff;
+    box-sizing: border-box;
+    text-shadow: 
+		-0   -2px 1px #000000,
+		 0   -2px 1px #000000,
+		-0    2px 1px #000000,
+		 0    2px 1px #000000,
+		-2px -0   1px #000000,
+		 2px -0   1px #000000,
+		-2px  0   1px #000000,
+		 2px  0   1px #000000,
+		-1px -2px 1px #000000,
+		 1px -2px 1px #000000,
+		-1px  2px 1px #000000,
+		 1px  2px 1px #000000,
+		-2px -1px 1px #000000,
+		 2px -1px 1px #000000,
+		-2px  1px 1px #000000,
+		 2px  1px 1px #000000,
+		-2px -2px 1px #000000,
+		 2px -2px 1px #000000,
+		-2px  2px 1px #000000,
+		 2px  2px 1px #000000,
+		-2px -2px 1px #000000,
+		 2px -2px 1px #000000,
+		-2px  2px 1px #000000,
+		 2px  2px 1px #000000;
+}
+body{
+    background: center / cover no-repeat url(img/back.jpg);
+    background-attachment:fixed;
+}
+@media(min-width: 576){
+    html, body{
+        font-size: 20px;
+    }
+}
+@media(min-width: 1200px){
+    html, body{
+        font-size: 24px;
+    }
+}
+
+.fluid-container{
+    overflow: hidden;
+}
+.ribbon{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    max-width:100%;
+    overflow: hidden;
+}
+.ribbon-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ribbon-title h1{
+    font-size: 2.5rem;
+    margin: 0;
+    line-height: 1;
+}
+.ribbon svg{
+    margin-bottom: 0.2rem;
+    height: 2rem;
+    fill: #24da00;
+    stroke: #ffffff;
+    stroke-width: 5%;
+}
+.ribbon-text-wrapper{
+    display: none;
+}
+
+.about{
+    background: linear-gradient(45deg, #000aaa, #000333);
+}
+
+
+.stages{
+    padding: 0 25%;
+}
+
+.stage{
+    transform: translate(100%);
+    transition: transform 1s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.stage-text{
+    width: 50%;
+    text-align: left;
+    display: block;
+    width:fit-content;
+    position: relative;
+    padding: 1rem;
+}
+.stage-text p{
+    margin: 0;
+}
+.stage svg{
+    width: 3rem;
+    height: 3rem;
+    fill: #ffffff;
+    flex-shrink: 0;
+}
+
+.footer{
+    position: relative;
+    background:#000000;
+    color: #ffffff;
+    max-width:100%;
+}
+.text-block{
+    transform: translate(-100%);
+    transition: transform 1s ease-in-out;
+}
+.block-img{
+    transform: translate(100%);
+    transition: transform 1s ease-in-out;
+}
+.invert .text-block{
+    transform: translate(100%);
+    transition: transform 1s ease-in-out;
+}
+.invert .block-img{
+    transform: translate(-100%);
+    transition: transform 1s ease-in-out;
+}
+.block-img img{
+    padding: 1rem;
+    width: 50%;
+}
+.footer::after{
+    content: " ";
+    background: right / contain no-repeat url(img/hand.png);
+    position: absolute;
+    top: -100%;
+    bottom: 100%;
+    right: 2%;
+    left: 0;
+}
+.btn-primary{
+    background-color: #ffb7be;
+    border-color: #f799a2;
+}
+.tokens{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+.perc{
+    background: #ffffff;
+    border-radius: 0.5rem;
+    padding-top: 0.2rem;
+}
+
+.button-link img{
+    border-radius: 50%;
+    height: 2rem;
+}
+
+@media(max-height: 768px){
+    .stages{
+        padding: 0;
+    }
+    .block-img img{
+        width: 80%;
+    }
+}
