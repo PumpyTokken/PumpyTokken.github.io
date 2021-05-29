@@ -11,6 +11,7 @@ window.onscroll = function() {
     for(i = 0; i < texts.length; i++){
         if(getScr >= $(texts[i]).offset().top) $(texts[i]).css("transform", "translate(0%)");
     }
+    if(getScr >= $('.spec-info').offset().top) $('.spec-info .text-block').slideDown(1000);
     for(i = 0; i < imgs.length; i++){
         if(getScr >= $(imgs[i]).offset().top) $(imgs[i]).css("transform", "translate(0%)");
     }
